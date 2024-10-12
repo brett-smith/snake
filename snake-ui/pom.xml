@@ -75,19 +75,7 @@
 				<exclusion>
 					<groupId>ch.qos.logback</groupId>
 					<artifactId>logback-classic</artifactId>
-				</exclusion><!--
-				<exclusion>
-					<groupId>org.jetbrains.kotlin</groupId>
-					<artifactId>kotlin-stdlib-jdk8</artifactId>
 				</exclusion>
-				<exclusion>
-					<groupId>org.jetbrains.kotlinx</groupId>
-					<artifactId>kotlin-coroutines-core-jvm</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>io.github.microutils</groupId>
-					<artifactId>kotlin-logging-jvm</artifactId>
-				</exclusion> -->
 				<exclusion>
 					<groupId>com.hierynomus</groupId>
 					<artifactId>sshj</artifactId>
@@ -162,84 +150,6 @@
 					<name>rasterize</name>
 				</property>
 			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>uk.co.bithatch</groupId>
-						<artifactId>svg-rasterizer-maven-plugin</artifactId>
-						<version>1.2</version>
-						<executions>
-							<execution>
-								<id>rasterize-icons</id>
-								<phase>process-resources</phase>
-								<goals>
-									<goal>rasterize-directory</goal>
-								</goals>
-								<configuration>
-									<inputDir>${basedir}/src/main/svg/icons</inputDir>
-									<destDir>${basedir}/src/main/resources/uk/co/bithatch/snake/ui/icons</destDir>
-									<outputs>
-										<output>
-											<path>{name}16{ext}</path>
-											<format>png</format>
-											<width>16</width>
-											<height>16</height>
-										</output>
-										<output>
-											<path>{name}24{ext}</path>
-											<format>png</format>
-											<width>24</width>
-											<height>24</height>
-										</output>
-										<output>
-											<path>{name}32{ext}</path>
-											<format>png</format>
-											<width>32</width>
-											<height>32</height>
-										</output>
-										<output>
-											<path>{name}48{ext}</path>
-											<format>png</format>
-											<width>48</width>
-											<height>48</height>
-										</output>
-										<output>
-											<path>{name}64{ext}</path>
-											<format>png</format>
-											<width>64</width>
-											<height>64</height>
-										</output>
-										<output>
-											<path>{name}96{ext}</path>
-											<format>png</format>
-											<width>96</width>
-											<height>96</height>
-										</output>
-										<output>
-											<path>{name}128{ext}</path>
-											<format>png</format>
-											<width>128</width>
-											<height>128</height>
-										</output>
-										<output>
-											<path>{name}256{ext}</path>
-											<format>png</format>
-											<width>256</width>
-											<height>256</height>
-										</output>
-										<output>
-											<path>{name}512{ext}</path>
-											<format>png</format>
-											<width>512</width>
-											<height>512</height>
-										</output>
-									</outputs>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
 		</profile>
 	</profiles>
 	<name>Snake - User Interface</name>
