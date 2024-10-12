@@ -89,24 +89,6 @@
 	</build>
 	<repositories>
 		<repository>
-			<id>javassh-opensource-snapshots</id>
-			<name>artifactory.javassh.com-snapshots</name>
-			<url>http://artifactory.javassh.com/opensource-snapshots</url>
-			<snapshots />
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-		<repository>
-			<id>javassh-opensource-releases</id>
-			<name>artifactory.javassh.com-releases</name>
-			<url>http://artifactory.javassh.com/opensource-releases</url>
-			<releases />
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
 			<id>oss-snapshots</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 			<snapshots />
@@ -115,26 +97,6 @@
 			</releases>
 		</repository>
 	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>javassh-opensource-snapshots</id>
-			<name>artifactory.javassh.com-snapshots</name>
-			<url>http://artifactory.javassh.com/opensource-snapshots</url>
-			<snapshots />
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</pluginRepository>
-		<pluginRepository>
-			<id>javassh-opensource-releases</id>
-			<name>artifactory.javassh.com-releases</name>
-			<url>http://artifactory.javassh.com/opensource-releases</url>
-			<releases />
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
 	<name>Snake - Parent</name>
 	<description>The parent module for all Snake modules.</description>
 </project>
