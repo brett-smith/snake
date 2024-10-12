@@ -54,7 +54,7 @@
 					<plugin>
 						<groupId>com.sshtools</groupId>
 						<artifactId>forker-updater-maven-plugin</artifactId>
-						<version>1.7-SNAPSHOT</version>
+						<version>1.7</version>
 						<executions>
 							<execution>
 								<id>updater</id>

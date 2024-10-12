@@ -9,16 +9,18 @@
 		<artifactId>snake</artifactId>
 	</parent>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.github.hypfvieh/dbus-java -->
 		<dependency>
 			<groupId>com.github.hypfvieh</groupId>
 			<artifactId>dbus-java</artifactId>
-			<version>4.0.0-SNAPSHOT</version>
+			<version>3.3.2</version>
 		</dependency>
-        <dependency>
-            <groupId>com.github.hypfvieh</groupId>
-            <artifactId>dbus-java-transport-native-unixsocket</artifactId>
-            <version>4.0.0-SNAPSHOT</version>
-        </dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.hypfvieh/dbus-java-transport-native-unixsocket -->
+		<dependency>
+			<groupId>com.github.hypfvieh</groupId>
+			<artifactId>dbus-java-transport-native-unixsocket</artifactId>
+			<version>5.1.0</version>
+		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<version>${project.version}</version>
