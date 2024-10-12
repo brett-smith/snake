@@ -70,12 +70,12 @@ public class MacroManager implements AutoCloseable, ActiveBankListener, ActivePr
 	public static final String CLIENT_PROP_INCLUDE_INPUT_EVENT_DEVICES = "includeInputEventDevices";
 	public static final String CLIENT_PROP_EXCLUDE_INPUT_EVENT_DEVICES = "excludeInputEventDevices";
 
-	private MacroSystem macroSystem;
-	private App context;
-	private Map<MacroDevice, Device> macroDevices = new HashMap<>();
-	private Map<Device, MacroDevice> reverseMacroDevices = new HashMap<>();
-	private Map<String, List<Pattern>> includeDevicePatterns = new HashMap<>();
-	private Map<String, List<Pattern>> excludeDevicePatterns = new HashMap<>();
+	private final MacroSystem macroSystem;
+	private final App context;
+	private final Map<MacroDevice, Device> macroDevices = new HashMap<>();
+	private final Map<Device, MacroDevice> reverseMacroDevices = new HashMap<>();
+	private final Map<String, List<Pattern>> includeDevicePatterns = new HashMap<>();
+	private final Map<String, List<Pattern>> excludeDevicePatterns = new HashMap<>();
 
 	private boolean started;
 
